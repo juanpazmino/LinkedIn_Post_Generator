@@ -1,0 +1,1 @@
+from models.linkedin_post import LinkedInPost

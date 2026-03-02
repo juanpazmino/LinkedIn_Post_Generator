@@ -24,7 +24,6 @@ class api_client:
         self.deployment = "gpt-4.1-nano"  # Nombre del modelo desplegado en Azure OpenAI
         self.client = AzureOpenAI()  # Inicia el cliente y como las variables tiene el nombre del SDK no hace falta escribir
 
-
     def api_response(self, prompt):
         try:
             # Realizar la llamada a la API con structured outputs
@@ -33,8 +32,7 @@ class api_client:
                 messages=[
                     {
                         "role": "system",
-                        "content": 
-                        "You are an expert in digital marketing and SEO content writing."
+                        "content": "You are an expert in digital marketing and SEO content writing."
                         "Your task is to generate professional and engaging LinkedIn posts based on the information provided by the user. "
                         "Ensure the content is relevant, informative, and engaging for LinkedIn's audience, using a professional and persuasive tone. "
                         "Include relevant hashtags to increase post visibility. "
